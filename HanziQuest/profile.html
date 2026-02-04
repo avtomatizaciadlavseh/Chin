@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Профиль — HanziQuest</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header id="topnav"></header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="card pad-lg">
+        <div class="row">
+          <div class="col">
+            <h1 class="h2" style="font-size:28px;margin:0 0 10px">Профиль</h1>
+            <p class="p">Игрок: <b id="pfName"></b></p>
+            <div class="spacer"></div>
+
+            <div class="grid-3">
+              <div class="kpi">
+                <div class="dot"></div>
+                <div>
+                  <b id="pfXP"></b><br>
+                  <span>XP</span>
+                </div>
+              </div>
+              <div class="kpi">
+                <div class="dot" style="background: var(--warn); box-shadow: 0 0 0 5px rgba(245,158,11,.10)"></div>
+                <div>
+                  <b>🔥 <span id="pfStreak"></span></b><br>
+                  <span>серия</span>
+                </div>
+              </div>
+              <div class="kpi">
+                <div class="dot" style="background: var(--accent2); box-shadow: 0 0 0 5px rgba(96,165,250,.12)"></div>
+                <div>
+                  <b>локально</b><br>
+                  <span>данные в браузере</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="spacer"></div>
+            <div class="card pad" style="background: rgba(2,6,23,.25); box-shadow:none">
+              <b>Настройки</b>
+              <div class="spacer"></div>
+              <div class="row" style="align-items:center">
+                <div class="col">
+                  <label class="p"><input type="checkbox" id="pfSound"> включить звук (синтез речи)</label>
+                  <label class="p"><input type="checkbox" id="pfMotion"> reduce motion</label>
+                  <p class="help">Если reduce motion включён, можно в будущем уменьшить анимации (в прототипе это задел на расширение).</p>
+                </div>
+                <div class="col" style="display:flex; justify-content:flex-end; gap:10px; flex-wrap:wrap">
+                  <button class="btn" id="btnPfSave" type="button">Сохранить</button>
+                  <button class="btn danger" id="btnPfReset" type="button">Сбросить прогресс</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="spacer"></div>
+            <h2 class="h2">Достижения</h2>
+            <div id="achWrap" class="grid-2"></div>
+          </div>
+
+          <div class="col">
+            <h2 class="h2">Аватар</h2>
+            <div class="card pad" style="background: rgba(2,6,23,.25); box-shadow:none">
+              <div style="display:flex; gap:14px; align-items:center; flex-wrap:wrap">
+                <img id="pfAvatarImg" src="" alt="avatar" style="width:140px;height:140px;border-radius:34px;border:1px solid rgba(34,48,74,.8)">
+                <div class="p">Аватар‑коуч появляется на всех страницах и напоминает о следующем шаге.</div>
+              </div>
+            </div>
+            <div class="spacer"></div>
+            <div id="pfAvatarGrid" class="avatar-grid"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <hr class="sep">
+      Хочешь расширить проект? Добавь SRS, базу HSK, распознавание штрихов и мультиплеер‑лигу.
+    </footer>
+  </main>
+
+  <div id="assistantRoot"></div>
+
+  <script src="js/app.js"></script>
+  <script src="js/profile.js"></script>
+</body>
+</html>

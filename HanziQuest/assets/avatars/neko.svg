@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffb3c7"/>
+      <stop offset="1" stop-color="#ffd6a5"/>
+    </linearGradient>
+  </defs>
+  <rect width="256" height="256" rx="56" fill="#121826"/>
+  <circle cx="128" cy="138" r="76" fill="url(#g)"/>
+  <path d="M70 98 L52 54 L94 76 Z" fill="#ffb3c7"/>
+  <path d="M186 98 L204 54 L162 76 Z" fill="#ffb3c7"/>
+  <path d="M78 96 L64 66 L88 78 Z" fill="#ff7aa2" opacity=".7"/>
+  <path d="M178 96 L192 66 L168 78 Z" fill="#ff7aa2" opacity=".7"/>
+  <ellipse cx="96" cy="132" rx="18" ry="24" fill="#fff"/>
+  <ellipse cx="160" cy="132" rx="18" ry="24" fill="#fff"/>
+  <ellipse cx="100" cy="140" rx="8" ry="10" fill="#1b1f2a"/>
+  <ellipse cx="156" cy="140" rx="8" ry="10" fill="#1b1f2a"/>
+  <circle cx="104" cy="136" r="3" fill="#fff"/>
+  <circle cx="160" cy="136" r="3" fill="#fff"/>
+  <path d="M122 156 Q128 162 134 156" stroke="#1b1f2a" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M120 172 Q128 182 136 172" stroke="#1b1f2a" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <circle cx="78" cy="160" r="10" fill="#ff7aa2" opacity=".75"/>
+  <circle cx="178" cy="160" r="10" fill="#ff7aa2" opacity=".75"/>
+  <path d="M48 172 Q80 160 112 170" stroke="#ffb3c7" stroke-width="6" fill="none" opacity=".55" stroke-linecap="round"/>
+  <path d="M208 172 Q176 160 144 170" stroke="#ffb3c7" stroke-width="6" fill="none" opacity=".55" stroke-linecap="round"/>
+  <text x="128" y="226" text-anchor="middle" font-size="16" fill="#e5e7eb" font-family="system-ui,Segoe UI">Neko</text>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="g3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#f472b6"/>
+    </linearGradient>
+  </defs>
+  <rect width="256" height="256" rx="56" fill="#121826"/>
+  <path d="M92 52 Q84 104 104 118 Q118 128 128 118 Q138 128 152 118 Q172 104 164 52 Q144 62 128 84 Q112 62 92 52 Z" fill="url(#g3)"/>
+  <circle cx="128" cy="150" r="76" fill="#f8fafc"/>
+  <path d="M92 56 Q88 98 106 112" stroke="#fff" stroke-width="10" opacity=".55" stroke-linecap="round" fill="none"/>
+  <path d="M164 56 Q168 98 150 112" stroke="#fff" stroke-width="10" opacity=".55" stroke-linecap="round" fill="none"/>
+  <ellipse cx="96" cy="146" rx="18" ry="24" fill="#fff"/>
+  <ellipse cx="160" cy="146" rx="18" ry="24" fill="#fff"/>
+  <ellipse cx="100" cy="154" rx="8" ry="10" fill="#1b1f2a"/>
+  <ellipse cx="156" cy="154" rx="8" ry="10" fill="#1b1f2a"/>
+  <circle cx="104" cy="150" r="3" fill="#fff"/>
+  <circle cx="160" cy="150" r="3" fill="#fff"/>
+  <path d="M124 168 Q128 172 132 168" stroke="#1b1f2a" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M112 176 Q128 190 144 176" stroke="#1b1f2a" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <circle cx="84" cy="176" r="10" fill="#f472b6" opacity=".65"/>
+  <circle cx="172" cy="176" r="10" fill="#f472b6" opacity=".65"/>
+  <text x="128" y="226" text-anchor="middle" font-size="16" fill="#e5e7eb" font-family="system-ui,Segoe UI">Usagi</text>
+</svg>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffb703"/>
+      <stop offset="1" stop-color="#fb7185"/>
+    </linearGradient>
+  </defs>
+  <rect width="256" height="256" rx="56" fill="#121826"/>
+  <circle cx="128" cy="142" r="76" fill="url(#g2)"/>
+  <path d="M64 106 L42 56 L96 86 Z" fill="#ffb703"/>
+  <path d="M192 106 L214 56 L160 86 Z" fill="#ffb703"/>
+  <path d="M74 102 L58 68 L92 84 Z" fill="#fff" opacity=".85"/>
+  <path d="M182 102 L198 68 L164 84 Z" fill="#fff" opacity=".85"/>
+  <ellipse cx="96" cy="138" rx="18" ry="24" fill="#fff"/>
+  <ellipse cx="160" cy="138" rx="18" ry="24" fill="#fff"/>
+  <ellipse cx="100" cy="146" rx="8" ry="10" fill="#1b1f2a"/>
+  <ellipse cx="156" cy="146" rx="8" ry="10" fill="#1b1f2a"/>
+  <circle cx="104" cy="142" r="3" fill="#fff"/>
+  <circle cx="160" cy="142" r="3" fill="#fff"/>
+  <path d="M120 164 Q128 170 136 164" stroke="#1b1f2a" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M128 164 Q128 182 112 190" stroke="#1b1f2a" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M128 164 Q128 182 144 190" stroke="#1b1f2a" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M56 188 Q92 206 128 192 Q164 206 200 188" fill="#fff" opacity=".18"/>
+  <circle cx="84" cy="170" r="10" fill="#fb7185" opacity=".8"/>
+  <circle cx="172" cy="170" r="10" fill="#fb7185" opacity=".8"/>
+  <text x="128" y="226" text-anchor="middle" font-size="16" fill="#e5e7eb" font-family="system-ui,Segoe UI">Kitsune</text>
+</svg>

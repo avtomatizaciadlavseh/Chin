@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Регистрация — HanziQuest</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header id="topnav"></header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="card pad-lg">
+        <h1 class="h2" style="font-size:28px;margin:0 0 10px">Создай профиль и выбери коуч‑аватара</h1>
+        <p class="p">Это офлайн‑прототип: данные сохраняются в браузере (localStorage). Можно в любой момент сбросить прогресс в профиле.</p>
+        <div class="spacer"></div>
+
+        <form class="form" id="regForm">
+          <label class="label">
+            Имя игрока
+            <input class="input" id="username" placeholder="Например: Alex" minlength="2" maxlength="20" autocomplete="nickname" required>
+            <p class="help">2–20 символов. Можно латиницей или кириллицей.</p>
+          </label>
+
+          <div class="row">
+            <div class="col">
+              <b>Выбери аватар</b>
+              <div class="spacer"></div>
+
+              <div class="avatar-grid">
+                <div class="avatar-pick" data-avatar="neko">
+                  <img src="assets/avatars/neko.svg" alt="Neko">
+                  <b>Neko</b>
+                  <span>кот‑коуч</span>
+                </div>
+                <div class="avatar-pick" data-avatar="kitsune">
+                  <img src="assets/avatars/kitsune.svg" alt="Kitsune">
+                  <b>Kitsune</b>
+                  <span>лиса‑стратег</span>
+                </div>
+                <div class="avatar-pick" data-avatar="panda">
+                  <img src="assets/avatars/panda.svg" alt="Panda">
+                  <b>Panda</b>
+                  <span>панда‑дзен</span>
+                </div>
+                <div class="avatar-pick" data-avatar="usagi">
+                  <img src="assets/avatars/usagi.svg" alt="Usagi">
+                  <b>Usagi</b>
+                  <span>кролик‑спринтер</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <b>Предпросмотр</b>
+              <div class="spacer"></div>
+              <div id="avatarPreview"></div>
+              <div class="spacer"></div>
+              <button class="btn" id="btnStart" type="submit" disabled>Начать</button>
+              <a class="btn ghost" href="index.html">На главную</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <hr class="sep">
+      Совет: учи по 5 минут в день. Это работает лучше, чем «марафон раз в неделю».
+    </footer>
+  </main>
+
+  <div id="assistantRoot"></div>
+
+  <script src="js/app.js"></script>
+  <script src="js/register.js"></script>
+</body>
+</html>

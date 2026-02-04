@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Canvas‑тренажёр — HanziQuest</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header id="topnav"></header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="card pad-lg">
+        <div class="quiz-head">
+          <b style="font-size:20px">Canvas‑тренажёр иероглифов</b>
+          <span>обводи → пиши → экспортируй</span>
+        </div>
+
+        <div class="spacer"></div>
+
+        <div class="canvas-wrap">
+          <div class="stage">
+            <canvas id="hanziCanvas"></canvas>
+            <div class="spacer"></div>
+            <div class="cta-row">
+              <button class="btn small" id="btnUndo" type="button">↩️ Undo</button>
+              <button class="btn small ghost" id="btnClear" type="button">Очистить</button>
+              <button class="btn small secondary" id="btnExport" type="button">Экспорт PNG</button>
+              <button class="btn small ghost" id="btnCanvasHelp" type="button">Как тренироваться</button>
+            </div>
+          </div>
+
+          <div class="controls">
+            <div class="control">
+              <b>Параметры кисти</b>
+              <div class="row2">
+                <label>Толщина: <span class="kbd" id="brushVal">10</span></label>
+                <input class="range" id="brushSize" type="range" min="4" max="22" value="10">
+              </div>
+            </div>
+
+            <div class="control">
+              <b>Подсказки</b>
+              <div class="row2">
+                <label><input type="checkbox" id="showGuide" checked> показывать штрихи</label>
+                <label><input type="checkbox" id="showGrid" checked> сетка</label>
+              </div>
+              <p class="help">Подсказки — тестовые. Здесь главное: уверенные линии и пропорции.</p>
+            </div>
+
+            <div class="control">
+              <b>Выбери знак</b>
+              <div id="charMeta"></div>
+              <div class="char-list" id="charList"></div>
+            </div>
+
+            <div class="control">
+              <b>Быстрый маршрут</b>
+              <p class="help" style="margin:0">
+                1) Обведи 2 раза с подсказками<br>
+                2) Отключи подсказки и напиши по памяти<br>
+                3) Экспортируй PNG
+              </p>
+              <div class="spacer"></div>
+              <a class="btn small" href="lesson-hanzi.html">Урок по компонентам</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <hr class="sep">
+      Работает с мышью/тачпадом/стилусом. Если линия «рвётся», попробуй рисовать медленнее.
+    </footer>
+  </main>
+
+  <div id="assistantRoot"></div>
+
+  <script src="js/app.js"></script>
+  <script src="js/canvas.js"></script>
+</body>
+</html>

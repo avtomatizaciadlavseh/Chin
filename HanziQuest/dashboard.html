@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Панель — HanziQuest</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header id="topnav"></header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="card pad-lg">
+        <div class="row">
+          <div class="col">
+            <h1 class="h2" style="font-size:28px;margin:0 0 10px">Панель игрока</h1>
+            <p class="p">Привет, <b id="dashUser"></b> 👋 Сегодня короткая миссия — и ты уже на шаг ближе к живому китайскому.</p>
+            <div class="spacer"></div>
+
+            <div class="grid-3">
+              <div class="kpi">
+                <div class="dot"></div>
+                <div>
+                  <b><span id="dashXP"></span></b><br>
+                  <span>XP</span>
+                </div>
+              </div>
+              <div class="kpi">
+                <div class="dot" style="background: var(--warn); box-shadow: 0 0 0 5px rgba(245,158,11,.10)"></div>
+                <div>
+                  <b>🔥 <span id="dashStreak"></span></b><br>
+                  <span>серия дней</span>
+                </div>
+              </div>
+              <div class="kpi">
+                <div class="dot" style="background: var(--accent2); box-shadow: 0 0 0 5px rgba(96,165,250,.12)"></div>
+                <div>
+                  <b>3–6 мин</b><br>
+                  <span>идеальная сессия</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="spacer"></div>
+            <div class="cta-row">
+              <button class="btn" id="btnResume" type="button">Продолжить</button>
+              <a class="btn ghost" href="lessons.html">Все уроки</a>
+              <a class="btn secondary" href="canvas.html">Тренажёр</a>
+            </div>
+          </div>
+
+          <div class="col">
+            <h2 class="h2">Прогресс по трём линиям</h2>
+
+            <div class="lesson-card">
+              <div class="top">
+                <b>Тоны</b>
+                <span style="color: var(--muted); font-size: 13px">слух + ритм</span>
+              </div>
+              <div class="progress"><i id="pTones"></i></div>
+              <div class="p">Сначала слышим, потом говорим. 5 раундов — лучший формат.</div>
+              <a class="btn small" href="lesson-tones.html">Открыть</a>
+            </div>
+
+            <div class="spacer"></div>
+
+            <div class="lesson-card">
+              <div class="top">
+                <b>Иероглифы</b>
+                <span style="color: var(--muted); font-size: 13px">смысл + конструктор</span>
+              </div>
+              <div class="progress"><i id="pHanzi"></i></div>
+              <div class="p">Не зубрим картинкой. Ищем компоненты и закрепляем рукой.</div>
+              <a class="btn small" href="lesson-hanzi.html">Открыть</a>
+            </div>
+
+            <div class="spacer"></div>
+
+            <div class="lesson-card">
+              <div class="top">
+                <b>Квест</b>
+                <span style="color: var(--muted); font-size: 13px">современная жизнь</span>
+              </div>
+              <div class="progress"><i id="pCulture"></i></div>
+              <div class="p">QR‑оплата, доставка, стрим‑покупки, 高铁 — язык через реальность.</div>
+              <a class="btn small" href="culture.html">Открыть</a>
+            </div>
+          </div>
+        </div>
+
+        <hr class="sep">
+
+        <div class="row">
+          <div class="col">
+            <h2 class="h2">Ежедневная миссия</h2>
+            <p class="p" id="dailyText"></p>
+          </div>
+          <div class="col" style="display:flex; align-items:center; justify-content:flex-end; gap:10px; flex-wrap:wrap">
+            <button class="btn" id="btnDaily" type="button">Сделать миссию</button>
+            <a class="btn ghost" href="profile.html">Настройки</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <hr class="sep">
+      Подсказка: лучше маленькая ежедневная привычка, чем «идеальный» план без действий.
+    </footer>
+  </main>
+
+  <div id="assistantRoot"></div>
+
+  <script src="js/app.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

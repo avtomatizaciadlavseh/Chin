@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HanziQuest — игра для изучения китайского</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header id="topnav"></header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-grid">
+        <div class="card pad-lg" id="heroCard">
+          <h1 class="title">Учить китайский как игру.<br>Про реальный Китай, а не про музей.</h1>
+          <p class="subtitle">
+            HanziQuest — офлайн‑прототип обучающего сервиса в стиле игровых платформ:
+            короткие уроки, прогресс, коуч‑аватар и тренажёр написания в Canvas.
+          </p>
+
+          <div class="badges">
+            <span class="badge">🧠 тоны — быстро и по делу</span>
+            <span class="badge">✍️ иероглифы — через компоненты</span>
+            <span class="badge">🧧 квесты — город, доставка, QR</span>
+            <span class="badge">🛜 работает офлайн</span>
+          </div>
+
+          <div class="cta-row">
+            <a class="btn" href="register.html">Начать обучение</a>
+            <a class="btn ghost" href="about.html">Что это за проект</a>
+            <button class="btn secondary" id="btnDemoToast" type="button">Демо‑подсказка</button>
+          </div>
+
+          <hr class="sep">
+          <p class="p">
+            Под капотом — чистые HTML/CSS/JS, без сборщиков. Прогресс сохраняется локально.
+            Идеально, чтобы показать концепт и UX.
+          </p>
+        </div>
+
+        <div class="card pad-lg">
+          <h2 class="h2">Как это выглядит</h2>
+          <p class="p">
+            Слева — обучение в формате мини‑игр, справа — твой коуч‑аватар (аниме‑животное).
+            Он напоминает о заданиях и ведёт по маршруту.
+          </p>
+          <div class="spacer"></div>
+
+          <div class="grid-2">
+            <div class="kpi">
+              <div class="dot"></div>
+              <div>
+                <b>Ежедневный квест</b><br>
+                <span>3–6 минут — и ты уже сделал шаг.</span>
+              </div>
+            </div>
+            <div class="kpi">
+              <div class="dot" style="background: var(--accent2); box-shadow: 0 0 0 5px rgba(96,165,250,.12)"></div>
+              <div>
+                <b>Canvas‑тренажёр</b><br>
+                <span>обводи штрихи и экспортируй PNG.</span>
+              </div>
+            </div>
+            <div class="kpi">
+              <div class="dot" style="background: var(--warn); box-shadow: 0 0 0 5px rgba(245,158,11,.10)"></div>
+              <div>
+                <b>Сцены из жизни</b><br>
+                <span>QR‑оплата, доставка, стримы.</span>
+              </div>
+            </div>
+            <div class="kpi">
+              <div class="dot" style="background: var(--danger); box-shadow: 0 0 0 5px rgba(251,113,133,.10)"></div>
+              <div>
+                <b>Прогресс</b><br>
+                <span>XP, серия, карточки уроков.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="spacer"></div>
+          <p class="help">Подсказка: если ты уже регистрировался, открой «Панель» после входа.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="card pad">
+        <h2 class="h2">Мини‑словарик (пример)</h2>
+        <p class="p">Мы учим слова, которые реально встретишь в мегаполисе:</p>
+        <ul class="list">
+          <li><span class="kbd">外卖</span> wàimài — доставка еды</li>
+          <li><span class="kbd">扫码</span> sǎomǎ — сканировать QR</li>
+          <li><span class="kbd">高铁</span> gāotiě — скоростной поезд</li>
+          <li><span class="kbd">直播</span> zhíbō — стрим/прямая трансляция</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <hr class="sep">
+      HanziQuest — учебный прототип. Никаких внешних сервисов, все данные хранятся в браузере.
+    </footer>
+  </main>
+
+  <div id="assistantRoot"></div>
+
+  <script src="js/app.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>

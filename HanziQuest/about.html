@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>О проекте — HanziQuest</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header id="topnav"></header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="card pad-lg">
+        <h1 class="h2" style="font-size:28px;margin:0 0 10px">О проекте HanziQuest</h1>
+        <p class="p">
+          Это учебный прототип веб‑сайта: дизайн, геймификация и несколько демо‑уроков.
+          Он сделан как статический набор страниц (HTML/CSS/JS), чтобы его можно было открыть сразу в браузере.
+        </p>
+
+        <div class="spacer"></div>
+        <div class="grid-2">
+          <div class="card pad" style="background: rgba(2,6,23,.25); box-shadow:none">
+            <b>Что уже есть</b>
+            <ul class="list">
+              <li>Регистрация (localStorage), выбор аватара</li>
+              <li>Панель: XP, серия, прогресс по урокам</li>
+              <li>Мини‑игра по тонам</li>
+              <li>Мини‑игра по иероглифам через компоненты</li>
+              <li>Квест‑история про современный Китай</li>
+              <li>Canvas‑тренажёр и экспорт PNG</li>
+            </ul>
+          </div>
+          <div class="card pad" style="background: rgba(2,6,23,.25); box-shadow:none">
+            <b>Куда расширять</b>
+            <ul class="list">
+              <li>SRS (spaced repetition) карточки слов</li>
+              <li>База HSK (уровни, темы, цели)</li>
+              <li>Распознавание штрихов и оценка точности</li>
+              <li>Система «лиг» и дуэлей (как в играх)</li>
+              <li>Контент «город/работа/учёба/путешествия»</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="spacer"></div>
+        <div class="cta-row">
+          <a class="btn" href="register.html">Начать</a>
+          <a class="btn ghost" href="index.html">На главную</a>
+          <a class="btn secondary" href="lessons.html">К урокам</a>
+        </div>
+
+        <hr class="sep">
+        <p class="help">
+          Технически: сайт не требует интернета, не использует внешние библиотеки и может быть легко развернут на любом хостинге.
+        </p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <hr class="sep">
+      HanziQuest — прототип для демонстрации UX идеи.
+    </footer>
+  </main>
+
+  <div id="assistantRoot"></div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

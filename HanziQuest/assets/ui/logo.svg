@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 120">
+  <defs>
+    <linearGradient id="lg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22c55e"/>
+      <stop offset="1" stop-color="#60a5fa"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="520" height="120" rx="28" fill="#0b1220"/>
+  <g transform="translate(24,20)">
+    <circle cx="40" cy="40" r="40" fill="url(#lg)" opacity=".95"/>
+    <path d="M24 34 h32 M24 48 h32 M32 24 v48" stroke="#0b1220" stroke-width="8" stroke-linecap="round"/>
+    <circle cx="40" cy="40" r="8" fill="#0b1220"/>
+  </g>
+  <text x="120" y="72" font-family="system-ui,Segoe UI,Arial" font-size="44" fill="#e5e7eb" font-weight="800">HanziQuest</text>
+  <text x="122" y="98" font-family="system-ui,Segoe UI,Arial" font-size="14" fill="#94a3b8">игра-тренажёр китайского для жизни в 2026</text>
+</svg>

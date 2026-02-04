@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Урок: Тоны — HanziQuest</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header id="topnav"></header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="card pad-lg">
+        <div class="quiz-head">
+          <b style="font-size:20px">Урок‑игра: Тоны</b>
+          <span>Раунд: <span id="toneRound"></span> · Счёт: <span id="toneScore"></span></span>
+        </div>
+
+        <div class="spacer"></div>
+        <div class="progress"><i id="toneProg"></i></div>
+
+        <div class="spacer"></div>
+        <div class="quiz-wrap">
+          <div class="quiz-head">
+            <b id="toneWord"></b>
+            <span id="toneHint"></span>
+          </div>
+
+          <div class="cta-row" style="margin-top:12px">
+            <button class="btn small secondary" id="btnSpeak" type="button">🔊 Произнести</button>
+            <button class="btn small ghost" id="btnExplain" type="button">Подсказка по тонам</button>
+            <a class="btn small ghost" href="lessons.html">Назад</a>
+          </div>
+
+          <div class="spacer"></div>
+          <div class="choices" id="toneChoices"></div>
+
+          <div class="spacer"></div>
+          <div class="cta-row">
+            <button class="btn" id="btnToneNext" type="button" disabled>Дальше</button>
+          </div>
+
+          <div id="toneEnd"></div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <hr class="sep">
+      Если синтез речи не работает: это зависит от браузера и установленных голосов. Можно тренироваться и без него.
+    </footer>
+  </main>
+
+  <div id="assistantRoot"></div>
+
+  <script src="js/app.js"></script>
+  <script src="js/tones.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Квест: Китай сегодня — HanziQuest</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header id="topnav"></header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="card pad-lg">
+        <div class="quiz-head">
+          <b style="font-size:20px">Квест‑история: Китай сегодня</b>
+          <span>XP в квесте: <span id="cultureXP">0</span></span>
+        </div>
+
+        <div class="spacer"></div>
+        <div class="progress"><i id="cultureProg"></i></div>
+
+        <div class="spacer"></div>
+        <div class="cta-row">
+          <button class="btn secondary" id="btnCultureStart" type="button">Начать заново</button>
+          <a class="btn ghost" href="lessons.html">Назад</a>
+        </div>
+
+        <div class="spacer"></div>
+        <div id="cultureWrap"></div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <hr class="sep">
+      Это культурный квест без «экзотики». Мы берём бытовую реальность: технологии + повседневные привычки.
+    </footer>
+  </main>
+
+  <div id="assistantRoot"></div>
+
+  <script src="js/app.js"></script>
+  <script src="js/culture.js"></script>
+</body>
+</html>
